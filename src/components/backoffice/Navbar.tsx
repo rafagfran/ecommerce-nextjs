@@ -8,25 +8,21 @@ import { Button } from "../ui/button";
 
 export function Navbar() {
   return (
-    <div className="flex items-center justify-between bg-">
-      <Button>
-        <HamburgerMenuIcon />
+    <nav className="flex items-center justify-between border-b bg-background h-16 px-8 py-4	fixed top-0 right-0 left-52">
+      <Button type="button" variant={"ghost"}>
+        <HamburgerMenuIcon className="size-6" />
       </Button>
-      <div className="flex space-x-3">
-        <Button>
-          <SunIcon />
+      <div className="flex ">
+        <Button type="button" variant={"ghost"}>
+          <SunIcon className="size-6" />
         </Button>
-        <Button>
-          <BellIcon />
+        <Button type="button" variant={"ghost"}>
+          <BellIcon className="size-6" />
         </Button>
-        <Button>
-          <PersonIcon />
-          <PersonIcon />
-          <PersonIcon />
-          <PersonIcon />
-          <PersonIcon />
+        <Button type="button" variant={"ghost"}>
+          <PersonIcon className="size-6" />
         </Button>
       </div>
-    </div>
+    </nav>
   );
 }

@@ -1,24 +1,21 @@
 import { Navbar } from "@/components/backoffice/Navbar";
 import { Sidebar } from "@/components/backoffice/Sidebar";
 import type { Metadata } from "next";
+import type React from "react";
 
 export const metadata: Metadata = {
   title: "Dashboard",
 };
 
-export default function RootLayout({
+export default function layout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div className="flex">
+    <div className="flex ">
       <Sidebar />
-      <div className="flex-1">
-        <h2>
-          <Navbar />
-        </h2>
-        <main>{children}</main>
+      <div className="flex-1 ">
+        <Navbar />
+        <main className="p-8 flex-1 min-h-screen mt-16 ml-52 ">{children}</main>
       </div>
     </div>
   );
