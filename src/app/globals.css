@@ -75,4 +75,23 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  h1 {
+    @apply text-3xl lg:text-4xl font-extrabold;
+  }
+
+  h2 {
+    @apply text-2xl lg:text-3xl font-bold;
+  }
+
+  h3 {
+    @apply text-xl lg:text-2xl font-semibold;
+  }
+
+  h4 {
+    @apply text-lg lg:text-xl font-medium;
+  }
+
+  p {
+    @apply text-base lg:text-lg;
+  }
 }
