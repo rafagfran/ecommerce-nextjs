@@ -1,5 +1,5 @@
-import { Navbar } from "@/components/backoffice/Navbar";
-import { Sidebar } from "@/components/backoffice/Sidebar";
+import { Navbar } from "@/components/dashboard/layout/Navbar";
+import { Sidebar } from "@/components/dashboard/layout/Sidebar";
 import type { Metadata } from "next";
 import type React from "react";
 

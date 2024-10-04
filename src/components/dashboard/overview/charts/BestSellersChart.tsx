@@ -1,7 +1,7 @@
 "use client";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";
 import { Pie } from "react-chartjs-2";
-import { Card, CardContent, CardHeader } from "../ui/card";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -28,7 +28,7 @@ export const data = {
   ],
 };
 
-export function BestSellingProductChart() {
+export function BestSellersChart() {
   return (
     <Card className="">
       <CardHeader>

@@ -29,6 +29,9 @@
       "a11y": {
         "useSemanticElements": "error"
       },
+      "security": {
+        "noDangerouslySetInnerHtml": "warn"
+      },
       "recommended": true,
       "suspicious": {
         "noExplicitAny": "error",
@@ -37,14 +40,6 @@
       },
       "style": {
         "noShoutyConstants": "warn",
-
-        "useNamingConvention": {
-          "level": "error",
-          "options": {
-            "requireAscii": true,
-            "strictCase": false
-          }
-        },
         "useFilenamingConvention": "error"
       },
       "correctness": {
@@ -54,7 +49,6 @@
       }
     }
   },
-
   "css": {
     "linter": {
       "enabled": true

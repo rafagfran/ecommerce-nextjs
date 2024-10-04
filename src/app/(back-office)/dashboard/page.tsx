@@ -1,7 +1,7 @@
-import { DashboardCharts } from "@/components/backoffice/DashboardCharts";
-import { Heading } from "@/components/backoffice/Heading";
-import { LargeCards } from "@/components/backoffice/LargeCards";
-import { SmallCards } from "@/components/backoffice/SmallCards";
+import { Heading } from "@/components/dashboard/layout/Heading";
+import { LargeCards } from "@/components/dashboard/overview/cards/LargeCards";
+import { SmallCards } from "@/components/dashboard/overview/cards/SmallCards";
+import { DashboardCharts } from "@/components/dashboard/overview/charts";
 
 export default function Dashboard() {
   return (
