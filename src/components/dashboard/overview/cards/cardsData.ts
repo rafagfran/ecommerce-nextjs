@@ -2,34 +2,18 @@ import { LayersIcon } from "@radix-ui/react-icons";
 
 export const LargeCardsData = [
   {
-    title: "Today Orders",
+    title: "Hoje",
     value: "1000,00",
-    icon: LayersIcon,
-    color: "bg-green-500",
+    yesterday: "1200,00",
   },
   {
-    title: "Yesterday Orders",
-    value: "0",
-    icon: LayersIcon,
-    color: "bg-blue-500",
+    title: "Este mês",
+    value: "120.58K",
+    lastMonth: "141.25K",
   },
   {
-    title: "This Month",
-    value: "12000,00",
-    icon: LayersIcon,
-    color: "bg-orange-500",
-  },
-  {
-    title: "Last Month",
-    value: "141K",
-    icon: LayersIcon,
-    color: "bg-purple-500",
-  },
-  {
-    title: "All-times Sales",
+    title: "Todas as vendas",
     value: "20M",
-    icon: LayersIcon,
-    color: "bg-purple-500",
   },
 ];
 
