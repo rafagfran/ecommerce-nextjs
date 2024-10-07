@@ -11,11 +11,11 @@ export default function layout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div className="flex ">
+    <div className="flex">
       <Sidebar />
       <div className="flex-1 ">
         <Navbar />
-        <main className="p-8 flex-1 min-h-screen mt-16 ml-52 ">{children}</main>
+        <main className="flex-1 min-h-screen p-8 ml-52 ">{children}</main>
       </div>
     </div>
   );

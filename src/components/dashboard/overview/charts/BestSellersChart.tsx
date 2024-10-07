@@ -32,7 +32,7 @@ export function BestSellersChart() {
   return (
     <Card className="">
       <CardHeader>
-        <h4 className="mb-6"> Best Selling Charts</h4>
+        <h3 className="mb-6"> Best Selling Charts</h3>
       </CardHeader>
       <CardContent>
         <Pie data={data} />

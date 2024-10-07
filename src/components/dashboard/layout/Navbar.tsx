@@ -9,13 +9,17 @@ import {
 } from "@radix-ui/react-icons";
 
 export function Navbar() {
+  function activeDarkTheme() {
+    document.body.classList.toggle("dark");
+  }
+
   return (
-    <nav className="flex items-center justify-between border-b bg-background/80 h-16 px-8 py-4 fixed top-0 right-0 left-52 transition-transform duration-300 backdrop-blur-md">
+    <nav className="flex items-center justify-between p-4 py-8 ml-52">
       <Button type="button" variant="ghost">
         <HamburgerMenuIcon className="size-6" />
       </Button>
       <div className="flex">
-        <Button type="button" variant="ghost">
+        <Button type="button" variant="ghost" onClick={activeDarkTheme}>
           <SunIcon className="size-6" />
         </Button>
         <Button type="button" variant="ghost">

@@ -71,28 +71,50 @@ body {
 
 @layer base {
   * {
-    @apply border-border p-0 m-0 box-border;
+    @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight;
+  }
+
   h1 {
-    @apply text-3xl lg:text-4xl font-extrabold;
+    @apply scroll-m-20 text-4xl leading-tight sm:text-5xl md:text-6xl;
   }
 
   h2 {
-    @apply text-2xl lg:text-3xl font-bold;
+    @apply scroll-m-20 pb-2 text-3xl font-semibold first:mt-0 lg:text-4xl;
   }
 
   h3 {
-    @apply text-xl lg:text-2xl font-semibold;
+    @apply scroll-m-20 text-2xl font-semibold lg:text-3xl;
   }
 
   h4 {
-    @apply text-lg lg:text-xl font-medium;
+    @apply scroll-m-20 text-xl font-semibold lg:text-2xl;
+  }
+
+  h5 {
+    @apply scroll-m-20 text-lg font-semibold lg:text-xl;
+  }
+
+  h6 {
+    @apply scroll-m-20 text-base font-semibold lg:text-lg;
   }
 
   p {
-    @apply text-base lg:text-lg;
+    @apply leading-7 [&:not(:first-child)]:mt-6;
+  }
+
+  .focus-text {
+    @apply text-2xl font-semibold;
   }
 }
