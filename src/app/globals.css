@@ -111,7 +111,7 @@ body {
   }
 
   p {
-    @apply leading-7 [&:not(:first-child)]:mt-6;
+    @apply leading-5 [&:not(:first-child)]:mt-6;
   }
 
   .focus-text {
