@@ -27,11 +27,27 @@ export function Sidebar() {
       icon: Book,
       title: "Catalogue",
       subLinks: [
-        { icon: Package, title: "Products", href: "/catalogue/products" },
-        { icon: Grid, title: "Categories", href: "/catalogue/categories" },
-        { icon: List, title: "Attributes", href: "/catalogue/attributes" },
-        { icon: Image, title: "Banners", href: "/catalogue/banners" },
-        { icon: TicketPercent, title: "Coupons", href: "/catalogue/coupons" },
+        {
+          icon: Package,
+          title: "Products",
+          href: "/dashboard/catalogue/products",
+        },
+        {
+          icon: Grid,
+          title: "Categories",
+          href: "/dashboard/catalogue/categories",
+        },
+        {
+          icon: List,
+          title: "Attributes",
+          href: "/dashboard/catalogue/attributes",
+        },
+        { icon: Image, title: "Banners", href: "/dashboard/catalogue/banners" },
+        {
+          icon: TicketPercent,
+          title: "Coupons",
+          href: "/dashboard/catalogue/coupons",
+        },
       ],
     },
     { icon: Users, title: "Customers", href: "/customers" },

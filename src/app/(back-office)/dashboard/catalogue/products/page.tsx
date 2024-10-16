@@ -1,7 +1,7 @@
 export default function page() {
   return (
     <div>
-      <h2>Categories</h2>
+      <h2>Produtos</h2>
     </div>
   );
 }

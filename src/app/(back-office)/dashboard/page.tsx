@@ -1,4 +1,3 @@
-import { Heading } from "@/components/dashboard/layout/Heading";
 import { LargeCards } from "@/components/dashboard/overview/cards/LargeCards";
 import { SmallCards } from "@/components/dashboard/overview/cards/SmallCards";
 import { CustomDataTable } from "@/components/dashboard/overview/table/CustomDataTable";
@@ -6,7 +5,7 @@ import { CustomDataTable } from "@/components/dashboard/overview/table/CustomDat
 export default function Dashboard() {
   return (
     <div className="space-y-6 ">
-      <Heading title="Dashboard Overview" />
+      {/* <Heading title="Dashboard Overview" /> */}
       <LargeCards />
       <SmallCards />
       {/* <DashboardCharts /> */}

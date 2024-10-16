@@ -1,7 +1,16 @@
 {
   "name": "ecommerce",
   "version": "0.1.0",
+  "author": {
+    "name": "Rafael Gonçalves Francisco",
+    "email": "rafagfra@hotmail.com"
+  },
   "private": true,
+  "engines": {
+    "node": ">=20.15.1",
+    "yarn": ">=1.22.22",
+    "npm": ">=10.7.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

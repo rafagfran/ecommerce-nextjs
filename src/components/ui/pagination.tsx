@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (
   <nav
     aria-label="pagination"
-    className={cn("mx-auto w-full mt-6 flex justify-center", className)}
+    className={cn("mx-auto flex justify-center", className)}
     {...props}
   />
 );
@@ -23,7 +23,7 @@ const PaginationContent = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <ul
     ref={ref}
-    className={cn("flex flex-row items-center gap-1", className)}
+    className={cn("flex flex-row items-center gap-2", className)}
     {...props}
   />
 ));

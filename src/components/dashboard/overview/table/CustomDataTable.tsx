@@ -13,6 +13,7 @@ import {
 import { useState } from "react";
 
 import data from "@/../data.json";
+import { Pencil } from "lucide-react";
 import { PaginationComponent } from "./PaginationComponent";
 
 const PAGE_SIZE = 10;
@@ -40,7 +41,7 @@ export function CustomDataTable() {
 
   return (
     <section>
-      <Table>
+      <Table className="border-b">
         <TableHeader>
           <TableRow>
             {headerTitles.map((title, i) => (
@@ -65,7 +66,8 @@ export function CustomDataTable() {
               <TableCell>{item.email}</TableCell>
               <TableCell>{item.gender}</TableCell>
               <TableCell className="text-center">
-                <Button variant="link" type="button">
+                <Button type="button" className="gap-2 ">
+                  <Pencil size={16} />
                   Edit
                 </Button>
               </TableCell>
@@ -74,11 +76,23 @@ export function CustomDataTable() {
         </TableBody>
       </Table>
 
-      <PaginationComponent
-        currentPage={currentPage}
-        onPageChange={handlePageChange}
-        totalPages={totalPages}
-      />
+      <div className="flex items-center justify-between mt-6">
+        <span className="">
+          Mostrando{" "}
+          <span className="font-semibold">
+            {startIndex + 1} - {startIndex + currentData.length}
+          </span>{" "}
+          de <span className="font-semibold">{data.length}</span> resultados
+        </span>
+
+        <div>
+          <PaginationComponent
+            currentPage={currentPage}
+            onPageChange={handlePageChange}
+            totalPages={totalPages}
+          />
+        </div>
+      </div>
     </section>
   );
 }

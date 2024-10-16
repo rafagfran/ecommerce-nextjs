@@ -17,7 +17,7 @@ export default function layout({
         <Sidebar />
         <section className="grid grid-rows-[auto_1fr] p w-full  mx-auto">
           <Navbar />
-          <main className="min-h-screen  p-4">{children}</main>
+          <main className="min-h-screen  px-8 py-4">{children}</main>
         </section>
       </div>
     </SidebarProvider>

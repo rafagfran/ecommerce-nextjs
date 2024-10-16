@@ -39,9 +39,10 @@ export function PaginationComponent({
         <PaginationItem key="start">
           <Button
             size="icon"
-            variant="ghost"
+            variant="outline"
             onClick={() => onPageChange(1)}
             aria-label="Go to first page"
+            className="border-slate-500"
           >
             1
           </Button>
@@ -61,9 +62,9 @@ export function PaginationComponent({
         <PaginationItem key={i}>
           <Button
             size="icon"
-            variant={currentPage === i ? "outline" : "ghost"}
+            variant={currentPage === i ? "default" : "outline"}
             onClick={() => onPageChange(i)}
-            className={currentPage === i ? "border-primary" : ""}
+            className={currentPage === i ? "" : "border-slate-500"}
             aria-label={`Go to page ${i}`}
             aria-current={currentPage === i ? "page" : undefined}
           >
@@ -81,7 +82,8 @@ export function PaginationComponent({
         <PaginationItem key="end">
           <Button
             size="icon"
-            variant="ghost"
+            variant="outline"
+            className="border-slate-500"
             onClick={() => onPageChange(totalPages)}
             aria-label="Go to last page"
           >
@@ -104,6 +106,7 @@ export function PaginationComponent({
             disabled={currentPage === 1}
             onClick={() => onPageChange(currentPage - 1)}
             aria-label="Previous page"
+            className="border-slate-500 font-semibold"
           >
             <ChevronLeftIcon className="w-4 h-4 mr-2" />
             Anterior
@@ -119,6 +122,7 @@ export function PaginationComponent({
             disabled={currentPage === totalPages}
             onClick={() => onPageChange(currentPage + 1)}
             aria-label="Next page"
+            className="border-slate-500 font-semibold"
           >
             Próximo
             <ChevronRightIcon className="w-4 h-4 ml-2" />
